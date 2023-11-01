@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="upper-panel">
+        <div id="previous"></div>
+        <div id="current">0</div>
+      </div>
+
+      <div class="buttons">
+        <button data-key="Clear_Entry" class="commands" id="clear_entry">
+          CE
+        </button>
+        <button data-key="Escape" class="commands" id="clear">C</button>
+        <button data-key="Backspace" class="commands" id="backspace">
+          <img
+            src="miscellaneous/backspace.png"
+            alt="backspace button"
+            draggable="false"
+          />
+        </button>
+        <button data-key="%" class="operator">%</button>
+
+        <button data-key="7" class="number">7</button>
+        <button data-key="8" class="number">8</button>
+        <button data-key="9" class="number">9</button>
+        <button data-key="/" class="operator">÷</button>
+
+        <button data-key="4" class="number">4</button>
+        <button data-key="5" class="number">5</button>
+        <button data-key="6" class="number">6</button>
+        <button data-key="*" class="operator">×</button>
+
+        <button data-key="1" class="number">1</button>
+        <button data-key="2" class="number">2</button>
+        <button data-key="3" class="number">3</button>
+        <button data-key="-" class="operator">−</button>
+
+        <button data-key="." class="etc" id="decimal">.</button>
+        <button data-key="0" class="number">0</button>
+        <button data-key="Enter" class="equals" id="equals">=</button>
+        <button data-key="+" class="operator">+</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

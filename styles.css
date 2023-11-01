@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@font-face {
+    font-family: "digital-7";
+    src: url("miscellaneous/digital-7/digital-7.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(215, 18%, 13%) ;
+}
+main {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 300px;
+    min-width: 200px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: hsl(214, 13%, 20%);
+}
+button {
+    height: 55px;
+    min-width: 40px;
+    background: #f2f2f2;
+    border: none;
+    font-family: Orbitron;
+    border: 2px solid black;
+    font-size: 1.4rem;
+    cursor: pointer;
+    outline: none;
+    transition: scale .2s;
+}
+.upper-panel {
+    height: 20vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 12px;
+    overflow: hidden;
+}
+#previous,
+#current {
+    text-align: end;
+    font-family: digital-7;
+}
+#previous {
+    height: 6vh;
+    font-size: 1.2rem;
+}
+#current {
+    font-size: 2.5rem;
+    padding-top: 40px;
+}
+#clear_entry, 
+#clear, 
+#backspace {
+    border-radius: 5px;
+}
+#clear_entry,
+#clear { 
+    background: #fde994;
+    transition: filter 0.3 ease;
+}
+#backspace {
+    background: #eb2632;
+    transition: filter 0.3 ease;
+}
+#backspace img {
+    width: 50px;
+    height: 50px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+img {
+    pointer-events: none;
+}
+.number,
+.etc,
+.operator,
+#equals {
+    border-radius: 5px;
+}
+.operator {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#decimal {
+    font-weight: 900;
+}
+.number:hover,
+.etc:hover {
+    background-color: #f2f2f2ba;
+    scale: 1.1;
+}
+.operator:hover {
+    background-color: hsl(158, 94%, 31%);
+}
+#equals:hover {
+    background: #f96d00;
+}
+.buttons button:hover {
+    filter: brightness(1.3);
+}
